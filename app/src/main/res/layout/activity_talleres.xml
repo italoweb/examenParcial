@@ -6,4 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".talleres">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="416dp"
+        android:layout_height="549dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ListView
+            android:id="@+id/listacursos"
+            android:layout_width="match_parent"
+            android:layout_height="549dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="119dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="52dp"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

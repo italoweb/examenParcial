@@ -136,20 +136,20 @@
             app:srcCompat="@drawable/ic_editar" />
 
         <ImageButton
-            android:id="@+id/btnreglamento"
-            android:layout_width="86dp"
-            android:layout_height="76dp"
-            android:layout_marginBottom="152dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_libro" />
-
-        <ImageButton
             android:id="@+id/btntalleres"
             android:layout_width="94dp"
             android:layout_height="78dp"
             android:layout_marginBottom="148dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_taller" />
+
+        <ImageButton
+            android:id="@+id/btnreglamento"
+            android:layout_width="86dp"
+            android:layout_height="76dp"
+            android:layout_marginBottom="152dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_libro" />
 
     </LinearLayout>
 
