@@ -129,6 +129,13 @@
         app:layout_constraintVertical_bias="1.0">
 
         <ImageButton
+            android:id="@+id/btninscripcion"
+            android:layout_width="84dp"
+            android:layout_height="81dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_editar" />
+
+        <ImageButton
             android:id="@+id/btnreglamento"
             android:layout_width="86dp"
             android:layout_height="76dp"
@@ -144,12 +151,6 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_taller" />
 
-        <ImageButton
-            android:id="@+id/btninscripcion"
-            android:layout_width="84dp"
-            android:layout_height="81dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_editar" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
