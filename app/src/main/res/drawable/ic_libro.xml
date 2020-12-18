@@ -6,9 +6,9 @@
     <path android:fillColor="#2196F3" android:pathData="m120,180h90v30h-90z"/>
     <path android:fillColor="#2196F3" android:pathData="m120,240h90v30h-90z"/>
     <path android:fillColor="#03A9F4" android:pathData="m120,300h90v30h-90z"/>
-    <path android:fillColor="#000000" android:pathData="m330,60h60v30h-60z"/>
-    <path android:fillColor="#000000" android:pathData="m300,120h90v30h-90z"/>
-    <path android:fillColor="#000000" android:pathData="m300,180h90v30h-90z"/>
-    <path android:fillColor="#000000" android:pathData="m300,240h90v30h-90z"/>
-    <path android:fillColor="#000000" android:pathData="m300,300h90v30h-90z"/>
+    <path android:fillColor="#2196F3" android:pathData="m330,60h60v30h-60z"/>
+    <path android:fillColor="#2196F3" android:pathData="m300,120h90v30h-90z"/>
+    <path android:fillColor="#2196F3" android:pathData="m300,180h90v30h-90z"/>
+    <path android:fillColor="#2196F3" android:pathData="m300,240h90v30h-90z"/>
+    <path android:fillColor="#2196F3" android:pathData="m300,300h90v30h-90z"/>
 </vector>

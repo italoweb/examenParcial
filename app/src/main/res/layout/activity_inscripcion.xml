@@ -4,18 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF9800"
     tools:context=".Inscripcion">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Conferencia Internacional de Investigación en Ciencia de Datos"
+        android:text="Registrar Datos"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.074" />
+        app:layout_constraintVertical_bias="0.103" />
 
     <TextView
         android:id="@+id/textView2"
@@ -23,13 +26,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:text="Email"
+        android:textColor="#2196F3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/email"
         android:layout_width="211dp"
         android:layout_height="41dp"
         android:layout_marginTop="32dp"
@@ -46,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:text="País de Procedencia"
+        android:textColor="#2196F3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.035"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,6 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="Nombres"
+        android:textColor="#2196F3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,6 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="Ape. Paterno"
+        android:textColor="#2196F3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,6 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="Ape. Materno"
+        android:textColor="#2196F3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,6 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="Celular"
+        android:textColor="#2196F3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,13 +111,14 @@
         android:layout_marginTop="28dp"
         android:maxLength="8"
         android:text="DNI"
+        android:textColor="#2196F3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/ap"
         android:layout_width="219dp"
         android:layout_height="40dp"
         android:layout_marginTop="28dp"
@@ -117,10 +127,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.681"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/am"
         android:layout_width="213dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
@@ -129,10 +139,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.688"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/ap" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/nom"
         android:layout_width="213dp"
         android:layout_height="41dp"
         android:layout_marginTop="8dp"
@@ -141,10 +151,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.69"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/am" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/cel"
         android:layout_width="211dp"
         android:layout_height="47dp"
         android:layout_marginTop="8dp"
@@ -154,10 +164,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.678"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/dni" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/dni"
         android:layout_width="213dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
@@ -167,10 +177,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.681"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/nom" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/pais"
         android:layout_width="213dp"
         android:layout_height="51dp"
         android:layout_marginTop="8dp"
@@ -179,17 +189,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.694"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/cel" />
 
     <Button
         android:id="@+id/btnregistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="64dp"
         android:text="Registrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="64dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_conferencia" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

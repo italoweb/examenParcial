@@ -4,32 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF9800"
     tools:context=".talleres">
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="416dp"
-        android:layout_height="549dp"
+        android:layout_width="407dp"
+        android:layout_height="492dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ListView
-            android:id="@+id/listacursos"
+            android:id="@+id/ListaTalleres"
             android:layout_width="match_parent"
-            android:layout_height="549dp" />
+            android:layout_height="476dp" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_volver"
-        android:layout_width="119dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="52dp"
+        android:id="@+id/volver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
         android:text="Volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="92dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="32dp"
+        android:text="Talleres"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

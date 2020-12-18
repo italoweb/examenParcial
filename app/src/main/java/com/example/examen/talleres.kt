@@ -13,23 +13,29 @@ class talleres : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_talleres)
 
-        val btnvolver=findViewById<Button>(R.id.btn_volver);
-        btnvolver.setOnClickListener(){
-            val i: Intent = Intent (this, MainActivity::class.java)
+        val btnvolver=findViewById<Button>(R.id.volver2)
+
+        btnvolver.setOnClickListener{
+            val i: Intent = Intent(this, MainActivity::class.java)
             startActivity(i)
         }
 
-        val lista = mutableListOf("Phyton", "Ciencia de Datos", "Big data","Mahing Learning","Power Bi","Android","Java","Mysql")
+        Toast.makeText(this, "Hoalss", Toast.LENGTH_SHORT).show()
+        val personas = mutableListOf("Phyton", "Ciencia de Datos", "Big data","Mahing Learning","Power Bi","Android","Java","Mysql")
 
-        val listViewDatos = findViewById<ListView>(R.id.listacursos)
+        val listViewDatos = findViewById<ListView>(R.id.ListaTalleres)
 
-        val arrayAdap = ArrayAdapter(this, android.R.layout.simple_list_item_1, lista)
+        val arrayAdap = ArrayAdapter(this, android.R.layout.simple_list_item_1, personas)
         listViewDatos.adapter = arrayAdap
 
         listViewDatos.setOnItemClickListener(){
                 parent, view, position, id ->
             Toast.makeText(this,
                 parent.getItemAtPosition(position).toString(),
-                Toast.LENGTH_SHORT).show()}
+                Toast.LENGTH_SHORT).show()
+        }
     }
+
+
+
 }
